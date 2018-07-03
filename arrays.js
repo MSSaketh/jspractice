@@ -57,3 +57,17 @@ console.log(remI);
 //copying an array
 var copy = cars.slice();
 console.log(copy);
+
+console.log(Array(7));
+
+var a = ['A','B','C','D'];
+console.log(a.copyWithin(1,3));
+
+function isBelowThreshold(currentValue) {
+  return currentValue < 40;
+}
+
+var array1 = [1, 30, 39, 29, 50, 13];
+
+console.log(array1.every(isBelowThreshold));
+// expected output: true

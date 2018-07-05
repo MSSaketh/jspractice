@@ -257,3 +257,7 @@ delete obj.a;
 console.log(obj.a);
 console.log("b" in obj);
 
+var a = [1,2,3,4];
+a.forEach((num, index) => {
+  return a[index] = num * 2;
+});

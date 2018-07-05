@@ -1,0 +1,27 @@
+<!-- Write a JavaScript function to get the value of the href, hreflang, rel, target, and type attributes of the specified link. -->
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset=utf-8 /> 
+<title>Collect the value of href</title> 
+</head> 
+<body> 
+<p><a id="id1" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="#">Link</a></p> 
+<button onclick="getAttributes()">Click here to get the attribute's value</button> 
+<script>
+    function getAttributes()
+{
+ var u = document.getElementById("id1").href;
+ alert('The value of the href attribute of the link is : '+u);
+ var v = document.getElementById("id1").hreflang;   
+ alert('The value of the hreflang attribute of the link is : '+v);
+ var w = document.getElementById("id1").rel; 
+  alert('The value of the rel attribute of the link is : '+w);
+ var x = document.getElementById("id1").target; 
+  alert('The value of the taget attribute of the link is : '+x);
+ var y = document.getElementById("id1").type; 
+  alert('The value of the type attribute of the link is : '+y);  
+}
+</script>
+</body> 
+</html>

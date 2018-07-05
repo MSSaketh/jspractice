@@ -1,0 +1,41 @@
+<!-- Write a JavaScript function to get the values of First and Last name of the following form. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <title>first and last name from a form</title>
+  <style type="text/css">
+    body {
+      margin: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <form name="myForm">
+    First name:
+    <input  type="text" name="fname" value="stack">
+    <br> Last name:
+    <input  type="text" name="lname" value="route">
+    <!-- <input type="submit" value="Submit"> -->
+  </form>
+  <button onclick="getFormvalue()">submit</button>
+  <p id="demo"></p>
+  <script>
+    function getFormValue() {
+      // var x = document.getElementById("form1").value;
+      // var y= document.getElementById("form2").value;
+      // var text ;
+      // var i;
+      // for (i = 0; i < x.length; i++) {
+      //   text += x[i].value + "<br>";
+      // }
+      var x=document.forms["myForm"]["fname"].value;
+      var y=document.forms["myForm"]["lname"].value;
+      document.getElementById("demo").innerHTML = x+" "+y;
+    }
+  </script>
+</body>
+
+</html>
